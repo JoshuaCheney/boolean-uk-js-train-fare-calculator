@@ -14,9 +14,38 @@ const under18 = userAge < 18;
 
 const pricePerKM = 0.21;
 
-let distance = prompt(`How far are you going in KM?`)
+let journey = prompt(
+    `
+      What jounrey are you planning?
+  
+      1 - Victoria to Paddington (20km)
+      2 - Victoria to Euston (43km)
+      3 - victoria to Manchester (240km)
+  
+      Please type in the number for your jounrey.
+    `
+  );
 
-const price = distance * pricePerKM;
+if (journey = 1) {
+    let distance = 20;
+}
+
+if (journey = 2) {
+    let distance = 43;
+}
+
+if (journey = 3) {
+    let distance = 240;
+}
+
+
+
+
+// let distance = prompt(`How far are you going in KM?`)
+
+const price = journey * pricePerKM;
+
+// const price = distance * pricePerKM;
 // console.log(price)
 
 if (under18) {
@@ -35,3 +64,4 @@ if (over18under65) {
     console.log("over18: ", userAge);
     console.log(price)
 }
+
